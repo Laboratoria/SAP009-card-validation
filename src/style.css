@@ -1,57 +1,70 @@
 * {
-    font-family: 'Quicksand', sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-repeat: no-repeat;
-    background: #A7D2CB;
-  }
-  main {
-    padding: 0 0 53px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-  }
-  .logo-desktop{
-    width: 400px;
-    margin-top: 15rem;
-    margin-left: 0;
-    position: fixed;
-  }
-  .ilustracao-desktop{
-    margin-right: 20px;
-  }
-  .nome-loja{
-    background: #F8EEE7;
-    color: #565656;
-    width: 250px;
-    height: 100px;
-    border: 10px solid #F8EEE7;
-    text-align: center;
-    margin-top: 36.5rem;
-    margin-left: 170px;
-   z-index: 9999;
-  }
-  .aventuras{
-    font-size: 30px;
-  }
-  .literarias{
-    font-size: 55px;
-  }
-  .tela-principal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 0 20px;
-  }
-  form {
-   color: #565656;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'OCRA';
+  src: url('ocra.ttf');
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background: #A7D2CB;
+}
+
+main {
+  padding: 0 0 53px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-desktop{
+  width: 400px;
+  margin-top: 15rem;
+  margin-left: 0;
+  position: fixed;
+}
+
+.ilustracao-desktop{
+  margin-right: 20px;
+}
+
+.nome-loja{
+  background: #F8EEE7;
+  color: #565656;
+  width: 250px;
+  height: 100px;
+  border: 10px solid #F8EEE7;
+  text-align: center;
+  margin-top: 36.8rem;
+  position: fixed;
+  margin-left: 170px;
+}
+
+.aventuras{
+  font-size: 30px;
+}
+
+.literarias{
+  font-size: 55px;
+}
+
+.tela-principal {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-top: 10rem;
+ margin-left:40%;
+}
+
+form {
+  color: #565656;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,10 +75,9 @@
   border: 10px solid #C98474;
   box-sizing: border-box;
   text-transform: uppercase;
-  margin-right: 30px;
-  margin-left: 10rem;
   gap: 5px;
-  }
+}
+
   .campos-numero-cartao, .campo-nome-usuario{
     background: #F2D388;
     border-radius: 10px;
@@ -91,23 +103,36 @@
     border-radius: 10px;
     border: 10px solid #F2D388;
   }
+  .btn-compra {
+    position: fixed;
+    top: 35rem;
+    left: 50%;
+    margin: auto;
+    align-self: center;
+    padding: 12px 35px;
+    border-radius: 10px;
+    border: none;
+    background: #F2D388;
+    color: #565656;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
   .formato-cartão{
     padding: 25px 27px;
     background: aliceblue;
+    margin-top: -18rem;
     width: 300px;
     height: 100px;
-    margin-top: -15rem;
     display: grid;
-    margin-left: 445px;
+    margin-left:50%;
     border: 10px solid aliceblue;
     border-radius: 20px;
-    color:#C98474;
-    font-weight: bold;
-  }
-  p,.formato-cartão{
-    top:3px;
   }
   .img-chip{
+    margin-top:1px;
     width: 50px;
     position: fixed;
   }
@@ -118,20 +143,24 @@
   .num-cartao-impresso{
     margin-left: 70px;
   }
-  .div-validade-impressa{
-    display: inline-flex;
-    margin-right: 4px;
-   
+  .num-cartao-impresso, .mes-impresso, .ano-impresso,
+  .cvv-impresso, .nome-impresso, .validade{
+    background-color: transparent;
+    border-color: transparent;
+    font-family: 'OCRA', monospace;
+    font-size: bold;
   }
-  button{
-    background: #F8EEE7;
-    border: 5px solid #F8EEE7;
-    border-radius: 10px;
-    width: 200px;
+  .mes-ano{
+    display: flex;
+  }
+  .bandeira-cartao {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    border-style: none;
+    margin-left:250px;
+    width: 50px;
     height: 30px;
-    margin-top:5px;
-    text-transform: uppercase;
-    color: #C98474;
-    font-weight: bold;
-    align-items: center;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
