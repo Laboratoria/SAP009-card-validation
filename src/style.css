@@ -1,0 +1,166 @@
+* {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: 'OCRA';
+  src: url('ocra.ttf');
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background: #A7D2CB;
+}
+
+main {
+  padding: 0 0 53px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.logo-desktop{
+  width: 400px;
+  margin-top: 15rem;
+  margin-left: 0;
+  position: fixed;
+}
+
+.ilustracao-desktop{
+  margin-right: 20px;
+}
+
+.nome-loja{
+  background: #F8EEE7;
+  color: #565656;
+  width: 250px;
+  height: 100px;
+  border: 10px solid #F8EEE7;
+  text-align: center;
+  margin-top: 36.8rem;
+  position: fixed;
+  margin-left: 170px;
+}
+
+.aventuras{
+  font-size: 30px;
+}
+
+.literarias{
+  font-size: 55px;
+}
+
+.tela-principal {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-top: 10rem;
+ margin-left:40%;
+}
+
+form {
+  color: #565656;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px 27px;
+  background-color: #C98474;
+  border-radius: 20px;
+  border: 10px solid #C98474;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  gap: 5px;
+}
+
+  .campos-numero-cartao, .campo-nome-usuario{
+    background: #F2D388;
+    border-radius: 10px;
+    border: 10px solid #F2D388;
+    width: 300px;
+  }
+  .mes-vencimento{
+    border-radius: 10px;
+    border: 10px solid #F2D388;
+    background: #F2D388;
+  }
+  .ano-vencimento{
+    background: #F2D388;
+    border-radius: 10px;
+    border: 10px solid #F2D388;
+    display: inline-block;
+    width: 40px;
+    margin-left: 5px;
+  }
+  .cvv-cartao{
+    width: 40px;
+    background: #F2D388;
+    border-radius: 10px;
+    border: 10px solid #F2D388;
+  }
+  .btn-compra {
+    position: fixed;
+    top: 35rem;
+    left: 50%;
+    margin: auto;
+    align-self: center;
+    padding: 12px 35px;
+    border-radius: 10px;
+    border: none;
+    background: #F2D388;
+    color: #565656;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .formato-cartão{
+    padding: 25px 27px;
+    background: aliceblue;
+    margin-top: -18rem;
+    width: 300px;
+    height: 100px;
+    display: grid;
+    margin-left:50%;
+    border: 10px solid aliceblue;
+    border-radius: 20px;
+  }
+  .img-chip{
+    margin-top:1px;
+    width: 50px;
+    position: fixed;
+  }
+  .div-cartao-impresso{
+    margin-top: 20px;
+    display: flex;
+  }
+  .num-cartao-impresso{
+    margin-left: 70px;
+  }
+  .num-cartao-impresso, .mes-impresso, .ano-impresso,
+  .cvv-impresso, .nome-impresso, .validade{
+    background-color: transparent;
+    border-color: transparent;
+    font-family: 'OCRA', monospace;
+    font-size: bold;
+  }
+  .mes-ano{
+    display: flex;
+  }
+  .bandeira-cartao {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    border-style: none;
+    margin-left:250px;
+    width: 50px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }

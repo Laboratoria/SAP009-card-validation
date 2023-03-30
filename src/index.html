@@ -1,14 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title>Aventuras Literárias</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./img/livro-favicon.png" type="image/x-icon" />
+</head>
+
+<body class="body-desktop" id="body-mobile">
+  <header></header>
+  <main>
+    <section class="ilustracao-desktop">
+      <img src="img/logo-loja-livros.png" alt="logo-loja" class="logo-desktop">
+      <div class="nome-loja">
+        <p class="aventuras">Aventuras</p>
+        <p class="literarias">Literárias</p>
+      </div>
+    </section>
+    <section class="tela-principal">
+      <form>
+        <label for="numero-cartao">número do cartão:</label>
+        <input name="numero-cartao" class="campos-numero-cartao" type="text" minlength="16" maxlength="16"
+          autocomplete="off" pattern="\d{4}\.?\d{4}\.?\d{4}.?\d{4}" placeholder="0000 0000 0000 0000" required />
+        <label for="nome">nome do titular:</label>
+        <input name="nome" class="campo-nome-usuario" type="text" minlength="3" autocomplete="off" required />
+        <label for="validade">validade:</label>
+        <div class="div-valide">
+          <select name="validade" class="mes-vencimento" required>
+            <option>mês</option>
+            <option value="1">01</option>
+            <option value="2">02</option>
+            <option value="3">03</option>
+            <option value="4">04</option>
+            <option value="5">05</option>
+            <option value="6">06</option>
+            <option value="7">07</option>
+            <option value="8">08</option>
+            <option value="9">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <input name="validade" class="ano-vencimento" type="text" minlength="4" maxlength="4" placeholder="ano"
+            required />
+        </div>
+        <label for="cvv">cvv</label>
+        <input name="cvv" class="cvv-cartao" type="text" minlength="3" maxlength="3" autocomplete="off" required />
+        </div>
+      </form>
+      <div id="botao">
+        <button class="btn-compra" type="button">concluir compra</button>
+      </div>
+      <p class="msg-erros-preenchimento"></p>
+      <p class="msg-validacao"></p>
+    </section>
+  </main>
+  <div class="formato-cartão">
+  
+      <img src="img/cartao/chip.png" class="img-chip">
+      <div class="div-cartao-impresso">
+        <input class="num-cartao-impresso" disabled />
+      </div>
+      <p class="validade">validade:</p>
+      <div class="mes-ano">
+        <input class="mes-impresso" disabled />
+        <input class="ano-impresso" disabled />
+      </div>
+      <input class="nome-impresso" disabled />
+      <input class="cvv-impresso" disabled />
+      <input class="bandeira-cartao" />
+  </div>
+  <footer></footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
